@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>bizschool</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png" />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+        integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- cooperblack -->
+    <link rel="stylesheet" href="https://use.typekit.net/kqm8zrw.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- 헤더 -->
+<header class="header">
+    <div class="inner">
+        <div class="logo-wrap">
+        <div class="logo"></div></div>
+        <nav class="header-left">
+            <ul>
+                <li>온라인 교육</li>
+                <li>스튜디오 예약</li>
+                <li>D-커머스 프로그램</li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="#">공지사항</a>
+            <span class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="icon-profile"><i class="fa-regular fa-user"></i></span>
+        </div>
+    </div>
+</header>
+<!-- 메인 배너 -->
+<section class="main-banner">
+    <div class="inner">
+        <div class="banner-img">
+            <a href="#">자세히보기&gt;</a>
+        </div>
+    </div>
+</section>
+<!-- 메인 콘텐츠 -->
+<section class="main-content">
+    <div class="inner">
+        <div class="main-tab-wrap">
+        <div class="main-tab">
+            <button class="main-tab-box1" id="main-tab-box">
+                <div class="icon">
+                    <div class="naver-icon" title="네이버AI">
+                    </div>
+                    <h2>네이버 AI</h2>
+                </div>
+            </button>
+            <button class="main-tab-box2" id="main-tab-box">
+                <div class="icon">
+                    <div class="smartstore-icon" title="스마트스토어">
+                    </div>
+                    <h2>스마트 스토어</h2>
+                </div>
+            </button>
+            <button class="main-tab-box3" id="main-tab-box">
+                <div class="icon">
+                    <div class="shoppinglive-icon" title="쇼핑라이브">
+                    </div>
+                    <h2>쇼핑라이브</h2>
+                </div>
+            </button>
+            <button class="main-tab-box4" id="main-tab-box">
+                <div class="icon">
+                    <div class="ads-icon" title="광고">
+                    </div>
+                    <h2>광고</h2>
+                </div>
+            </button>
+            <button class="main-tab-box5" id="main-tab-box">
+                <div class="icon">
+                    <div class="smartplace-icon" title="스마트플레이스">
+                    </div>
+                    <h2>스마트플레이스</h2>
+                </div>
+            </button>
+            <button class="main-tab-box6" id="main-tab-box">
+                <div class="icon">
+                    <div class="blog-icon" title="블로그/인플루언서">
+                    </div>
+                    <h2>블로그/인플루언서</h2>
+                </div>
+                <button class="main-tab-box7" id="main-tab-box">
+                    <div class="icon">
+                        <div class="expert-icon" title="엑스퍼트/프리미엄콘텐츠">
+                        </div>
+                        <h2>엑스퍼트/프리미엄콘텐츠</h2>
+                    </div>
+            </button>
+            <button class="main-tab-box8" id="main-tab-box">
+                <div class="icon">
+                    <div class="business-icon" title="비즈니스팁">
+                    </div>
+                    <h2>비즈니스팁</h2>
+                </div>
+            </button>
+            <button class="main-tab-box9" id="main-tab-box">
+                <div class="icon">
+                    <div class="all-icon" title="전체보기">
+                    </div>
+                    <h2>전체보기</h2>
+                </div>
+            </button>
+        </div>
+    </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="more-card">
+                    <img src="images/ic_right_hor.png" alt="더보기">
+                    <p><strong>네이버 AI</strong>코스 교육</p>
+                    <p>10개 전체보기</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+</section>
+<!--  추천 교육-->
+<section class="commend-education">
+    <div class="inner">
+        <h1 class="commend-title">이번 주 추천 교육</h1>
+        <div class="swiper meswiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="fa-regular fa-bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="fa-regular fa-bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="fa-regular fa-bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="fa-regular fa-bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+</section>
+<!-- 스터디셀러 -->
+<section class="steady-seller">
+    <div class="inner">
+        <div class="steady-title">
+        <h1>스테디셀러 라인업</h1>
+        <i class="fa-solid fa-circle-exclamation"></i>
+    </div>
+    <div class="swiper eaSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="main-img">
+                <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                <span class="badge-green">2000P 지급</span>
+            </div>
+            <div class="main-txt">
+                <div class="main-title">
+            <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+            <div class="tagbtn">
+                <span class="tag">사업자</span>
+                <span class="tag">포인트</span>
+            </div>
+        </div>
+        <div class="main-info">
+            매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+        </div>
+        <p class="side-info">
+            <span class="information">네이버 프로 박수연</span>
+            <span class="information">총 20분</span>
+            <span class="information">3개 강의</span>
+        </p>
+        </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="main-img">
+                <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                <span class="badge-green">2000P 지급</span>
+            </div>
+            <div class="main-txt">
+                <div class="main-title">
+            <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+            <div class="tagbtn">
+                <span class="tag">사업자</span>
+                <span class="tag">포인트</span>
+            </div>
+        </div>
+        <div class="main-info">
+            매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+        </div>
+        <p class="side-info">
+            <span class="information">네이버 프로 박수연</span>
+            <span class="information">총 20분</span>
+            <span class="information">3개 강의</span>
+        </p>
+        </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="main-img">
+                <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                <span class="badge-green">2000P 지급</span>
+            </div>
+            <div class="main-txt">
+                <div class="main-title">
+            <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+            <div class="tagbtn">
+                <span class="tag">사업자</span>
+                <span class="tag">포인트</span>
+            </div>
+        </div>
+        <div class="main-info">
+            매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+        </div>
+        <p class="side-info">
+            <span class="information">네이버 프로 박수연</span>
+            <span class="information">총 20분</span>
+            <span class="information">3개 강의</span>
+        </p>
+        </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="main-img">
+                <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                <span class="badge-green">2000P 지급</span>
+            </div>
+            <div class="main-txt">
+                <div class="main-title">
+            <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+            <div class="tagbtn">
+                <span class="tag">사업자</span>
+                <span class="tag">포인트</span>
+            </div>
+        </div>
+        <div class="main-info">
+            매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+        </div>
+        <p class="side-info">
+            <span class="information">네이버 프로 박수연</span>
+            <span class="information">총 20분</span>
+            <span class="information">3개 강의</span>
+        </p>
+        </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="steady-banner">
+        <div class="swiper WySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="steady-slide1"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="steady-slide2"></div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+      </div>
+    </div>
+</section>
+<!-- 새로운 코스 교육 -->
+<section class="new-education">
+    <div class="inner">
+        <h1 class="new-title">
+            <strong>NEW</strong>
+            새로운 코스 교육
+        </h1>
+        <div class="swiper meswiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-img">
+                    <button class="bookmark"><span class="book-icon"><i class="svg-ic_bookmark"></i></span></button>
+                    <span class="badge-green">2000P 지급</span>
+                </div>
+                <div class="main-txt">
+                    <div class="main-title">
+                <h1>24시간 빠른 고객 응대 AI로 해결! CLOVA 라이브챗</h1>
+                <div class="tagbtn">
+                    <span class="tag">사업자</span>
+                    <span class="tag">포인트</span>
+                </div>
+            </div>
+            <div class="main-info">
+                매번 비슷한 고객 문의...자동으로 답변할 수 없을까? CLOVA 라이브챗으로 간편 해결!
+            </div>
+            <p class="side-info">
+                <span class="information">네이버 프로 박수연</span>
+                <span class="information">총 20분</span>
+                <span class="information">3개 강의</span>
+            </p>
+            </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+</section>
+<!-- 공지사항 -->
+<section class="notice">
+    <div class="inner">
+        <h1 class="notice-title">
+            공지사항
+        </h1>
+        
+    </div>
+</section>
+<!-- 코스 소개 -->
+<section class="course">
+    <div class="inner"></div>
+</section>
+<!-- 푸터 -->
+<footer class="footer"></footer>
+</body>
+</html>

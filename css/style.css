@@ -1,0 +1,498 @@
+@charset "utf-8";
+@import url("font.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-margin-top: 150px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  color: #191919;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+html {
+  font-size: 10px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+  background-color: rgba(137, 115, 88, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+body {
+  font-family: "AppleSDGothicNeo", "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  /* letter-spacing: -0.64px; */
+  color: #191919;
+  word-break: keep-all;
+  background-color: rgb(25, 26, 31);
+}
+/* 공통요소 */
+.wrap {
+  position: relative;
+  display: block;
+  /* background-color: #fffcfc; */
+  background-color: #000;
+}
+.inner {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+/* 헤더 */
+.header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+}
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-wrap {
+  height: 80px;
+}
+.logo {
+  width: 150px;
+  height: 80px;
+  background: url("/images/nbs_bi.svg") 0px 50% / 205px no-repeat;
+}
+.logo-wrap h1 {
+  font-size: 18px;
+}
+.header-left {
+  margin-right: 300px;
+}
+.header-left ul {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.header-left ul li {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header-right {
+  color: #fff;
+  display: flex;
+  gap: 10px;
+}
+.header-right a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.header-right i {
+  font-size: 20px;
+}
+/* 메인 배너 */
+.main-banner {
+  width: 100%;
+  height: 360px;
+  min-height: 360px;
+  background-color: rgb(38, 42, 53);
+  display: flex;
+  align-items: flex-end;
+}
+.banner-img {
+  position: relative;
+  margin-top: 80px;
+  width: 100%;
+  height: 280px;
+  background-color: transparent;
+  background: url("https://bizschool-phinf.pstatic.net/MjAyMzA5MjdfMjUw/MDAxNjk1NzkyNzE5ODEw.MQp7g0DrBap8kLgi-QgmwpssTZIXuNYpIQ4zFthC46gg.UQ8dEoTA0fMdid9QK7K7ORwFQc9NeK_HKvYbdzYxe1og.PNG/O0skf6YNntkk3TTOP8Pw.png?type=u1200_280@2x")
+    50% 0px / cover;
+}
+.banner-img a {
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+/* 컨텐츠 탭 */
+.main-content {
+  width: 100%;
+  height: 100%;
+  padding: 64px 0px 0px;
+  z-index: 1;
+  background-color: rgb(25, 26, 31);
+  /* display: flex;
+    flex-direction: column; */
+}
+.main-content .inner {
+}
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+}
+.naver-icon {
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMzA2MjlfMjMx/MDAxNjg4MDE4MjY4MTUz.sglOQuVVHLTTqlFn18zTqTPx2_aTLat23ejcrGKmxz4g.5vBHs---Achl1M6ce4zqxwbo8CGxozoSETjS7WcQ2akg.PNG/PiNQ4WB2ybl6nj12Ua9K.png?type=u72_72@2x)
+    50% 0px / cover;
+}
+.label {
+  font-family: "AppleSDGothicNeo";
+  font-size: 16px;
+  font-weight: bold;
+  white-space: normal;
+}
+.smartstore-icon {
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMjExMjlfMTM1/MDAxNjY5Njk5NDA4NjM5.Ov69UO9VQ7duFkdKjrrFrg1gl7_xF0fNp-nCqZO10ssg.Txghl43CKitGB4oiJXViwGHxIRVUAJGWceJY91u9niQg.PNG/va3N1WLXObHXGcSso1HX.png?type=u72_72@2x)
+    50% 0px / cover;
+}
+.main-tab {
+  display: flex;
+  justify-content: space-between;
+}
+.main-tab-wrap {
+  max-width: 1300px;
+  overflow: hidden;
+}
+.main-tab-wrap::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.main-tab h2 {
+  font-family: "AppleSDGothicNeo";
+  width: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: normal;
+  text-align: center;
+}
+.shoppinglive-icon {
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMjExMjlfMzEg/MDAxNjY5Njk5NDI2MDQ3.DrQCj1ir6lu2avkQES40c2UNWpekNTXRjWOwEbjic0Ag.wHXJ3A0JwNBj98_UW-yvmkbUFeLsuvEm5hW5xMDjoncg.PNG/h6douFIvYj4npd3aM5pv.png?type=u72_72@2x)
+    50% 0px / cover;
+}
+.ads-icon {
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://bizschool-phinf.pstatic.net/MjAyMjExMjlfMzgg/MDAxNjY5Njk5NDQwMjAx.9j5FEqsuqxjN6BYUrRxR9LiXJK2ZIq0tQk97pYbdV_Ug.ayicgkuhSXaGBq1O1P35LquMHWD4VbBTwVZLgmExlSIg.PNG/KgsWArlx7JKO1gIsFxKp.png?type=u72_72@2x")
+    50% 0px / cover;
+}
+
+.smartplace-icon {
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMjExMjlfMjE1/MDAxNjY5Njk5NDU1MzM3.GRlpNc2NYd3Toq0vibEm70hpLll7nyIfEVq3CHf0Eh4g.HzHTezvUVquQoOIhzklP-I5WgnAoLX93ESKvPUcwRYUg.PNG/fFabm1P0VIqPX9KeaRkt.png?type=u72_72@2x)
+    50% 0px / cover;
+}
+#main-tab-box {
+  flex-shrink: 0;
+  color: rgb(177, 181, 194);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  min-height: 138px;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 60px;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+}
+.blog-icon {
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMzA2MTlfMjk3/MDAxNjg3MTMzNTIzNjQ1.mR1lz-NNxkXFt3vG0wpzMHt5GciU3VdfUUrjqrd8PMYg.3LZkbZwnhnOWQXxnkj-ObIt-XSakxCQTDMn1Kp74GQ8g.PNG/ubKVvoRC2d5e4U9ETRq3.png?type=u72_72@2x)
+    50% 0px / cover;
+}
+.expert-icon {
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMzA2MTlfMTgx/MDAxNjg3MTMzNTYzNDUy.wqyxbmNz1b5H7o47W1kTYsXkwUOqEeYP9dc5UxTDeMog.Xu6PbHyzo_24V2bmDNlw8LRpKmVEUrei1ER0xkpDWV4g.PNG/lhieViu2jKp22TMUda5d.png?type=u72_72@2x)
+    50% 0px / cover;
+}
+.business-icon {
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMjExMjlfMTk4/MDAxNjY5Njk5NTAxNDk2.pShtXN3Ci5Hw6lu4atXuArplOeGCoSiHEa5tI9nHFn8g.glHjTgSwubv8GGC38gXjuvG-bIyRvbjlrDEEqkHco_Eg.PNG/qqzyK9f7D15R9hTKnS95.png?type=u72_72@2x)
+    50% 0px / cover;
+}
+.all-icon {
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(/images/ic_nav_all.png?type=u72_72@2x) 50% 0px / cover;
+}
+.icon h2 {
+  text-align: center;
+}
+/* 메인 콘텐츠 스와이퍼 */
+.swiper {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.main-img {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMzAyMTRfNDQg/MDAxNjc2MzM3NDA3NTc1.BzGpJo4KOPbEQQ-6afjYCTyIpWk8OstM9LeYuvVgPv8g.XwdOW_jC1MXp6vQk6tbygz3Y_eTG2yzEb9NLz9uR2Wog.PNG/xH6bKCO3QI67mucQsBRK.png?type=u312_176@2x)
+    0px / cover;
+}
+.badge-green {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(106, 189, 179, 0.6);
+  font-size: 13px;
+  padding: 10px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 10px;
+}
+.main-img .bookmark {
+  position: absolute;
+  color: #fff;
+  font-weight: 100;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  display: block;
+  background: transparent;
+  z-index: 50;
+  border: 0;
+}
+.main-txt {
+  padding: 10px;
+  background: rgb(38, 42, 53);
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.main-title {
+  position: relative;
+  padding-top: 10px;
+  font-size: 16px;
+  height: 48px;
+}
+.main-title .tag {
+  display: inline-block;
+  border: 1px solid rgb(110, 114, 193);
+  border-radius: 4px;
+  color: rgb(126, 133, 255);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 3px;
+  margin-right: 5px;
+}
+.tagbtn {
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 35px;
+}
+.main-info {
+  opacity: 0;
+}
+.side-info {
+  margin-top: 8px;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(177, 181, 194);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.information::before {
+  content: " ・ ";
+}
+.side-info {
+  text-align: left;
+}
+.swiper-button-next {
+  width: 48px;
+  height: 48px;
+  right: 8px;
+  background: url(/images/ic_nav-next.png) 0px 0px / 48px 48px no-repeat;
+}
+.swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  right: -24px;
+  background: url(/images/ic_nav-prev.png) 0px 0px / 48px 48px no-repeat;
+}
+.swiper-button-prev::after {
+  content: "";
+}
+.swiper-button-next::after {
+  content: "";
+}
+.more-card {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.more-card img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+.more-card strong {
+  color: rgb(113, 229, 215);
+  margin-right: 5px;
+}
+.more-card p {
+  font-weight: bold;
+}
+/* 이번주 추천 교육 */
+.commend-education {
+  width: 100%;
+  margin-top: 96px;
+}
+.commend-education .commend-title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+/* 스테디 셀러 */
+.steady-seller {
+  width: 100%;
+  margin-top: 96px;
+}
+.steady-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.steady-seller .steady-title h1 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+}
+.steady-seller .steady-title i {
+  color: #fff;
+  font-size: 22px;
+}
+.steady-banner {
+  width: 100%;
+  margin-top: 96px;
+}
+.steady-banner .swiper{
+    width: 100%;
+    height: 160px;
+    padding: 0;
+}
+.steady-banner .swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.steady-banner .steady-slide1{
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMzEwMTdfMzcg/MDAxNjk3NTIxNjU0NTEw.6DLTQQ8mJuHBXSCNGAqrBKs1X1J6_T9EZNkvTsGKMkUg.Q-T8w5_7sWJuDYigd-8Tzt_Mzbjamk99bCY3KNLs7wcg.PNG/5wgGtmw76RT5m5asfwvg.png?type=u1200_160@2x) 50% 0px / cover;
+}
+.steady-banner .steady-slide2{
+  width: 100%;
+  height: 100%;
+  background: url(https://bizschool-phinf.pstatic.net/MjAyMzEwMTdfMTQ4/MDAxNjk3NTIyMDA5ODIy.S6b6cdxGO_dMxcBRbu_Ujkoo_9Blqc-E25-ybhdP830g.GVZB-SJvJ1BIERhqaG0kepfGlcL3eH-nSRqYWR84stUg.PNG/l17ymN7Hq72EAbvCILLm.png?type=u1200_160@2x) 50% 0px / cover;
+}
+/* 새로운 코스 교육 */
+.new-education{
+  width: 100%;
+  margin-top: 96px;
+}
+.new-education .new-title{
+  font-size: 34px;
+  color: #fff;
+  font-weight: bold;
+}
+.new-title strong{
+  color: rgb(113, 229, 215);
+}
+/* 공지사항 */
+.notice{
+  width: 100%;
+  margin-top: 96px;
+}
+.notice .notice-title{
+  font-size: 34px;
+  color: #fff;
+  font-weight: bold;
+}

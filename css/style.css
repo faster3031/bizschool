@@ -175,17 +175,13 @@ body {
   background: url(https://bizschool-phinf.pstatic.net/MjAyMjExMjlfMTM1/MDAxNjY5Njk5NDA4NjM5.Ov69UO9VQ7duFkdKjrrFrg1gl7_xF0fNp-nCqZO10ssg.Txghl43CKitGB4oiJXViwGHxIRVUAJGWceJY91u9niQg.PNG/va3N1WLXObHXGcSso1HX.png?type=u72_72@2x)
     50% 0px / cover;
 }
-.main-tab {
-  display: flex;
-  justify-content: space-between;
-}
 .main-tab-wrap {
-  max-width: 1300px;
-  overflow: hidden;
+  width: 100%;
+  overflow-x: auto;
 }
-.main-tab-wrap::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+
+.main-tab {
+  display: inline-flex;
 }
 .main-tab h2 {
   font-family: "AppleSDGothicNeo";
@@ -223,7 +219,7 @@ body {
   background: url(https://bizschool-phinf.pstatic.net/MjAyMjExMjlfMjE1/MDAxNjY5Njk5NDU1MzM3.GRlpNc2NYd3Toq0vibEm70hpLll7nyIfEVq3CHf0Eh4g.HzHTezvUVquQoOIhzklP-I5WgnAoLX93ESKvPUcwRYUg.PNG/fFabm1P0VIqPX9KeaRkt.png?type=u72_72@2x)
     50% 0px / cover;
 }
-#main-tab-box {
+.main-tab-box {
   flex-shrink: 0;
   color: rgb(177, 181, 194);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
